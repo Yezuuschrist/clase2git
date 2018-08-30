@@ -9,6 +9,10 @@ git status   nos muestra que archivos dentro de la carpeta estan en git
 git add "nombre del archivo"   agrega al archivo al staging area
 git add .   agrega a todos los archivos de la carpeta al staging area
 git rm --cached "nombre del archivo"   saca al archivo del staging area
-git commit -m "nombre para la version"   Esto commitea los archivos que hubiesen estado en el staging area
+git commit -m "nombre para la version"   Esto commitea los archivos que hubiesen estado en el staging area (entre las comillas es indispensable y es un mensaje corto)
 git log   nos muestra con que codigo de registro quedo el commit quien hizo el cambio y que dia y hora tiene ademas del nombre que se le dio a la version
 git commit -a -m "nombre de las modificaciones"   me permite agregar al staging y commitear al mismo tiempo sin necesidad de hace git add
+git reset HEAD nombre del archivo   me saca al archivo seleccionadao del staging
+git commit -a   (sin la -m, me enviara a un editor de texto de linux donde tenemos que escribir el mensaje que se mostrara acerca del 
+	cambio que se le hizo a ese commit, una vez terminado de comentar hay que darle a Esc y luego escribir :wq Enter para guardar 
+	ese mensaje a ese commit
