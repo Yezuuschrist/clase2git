@@ -1,0 +1,8 @@
+cls: limpiar
+dir: conocer lo que hay en la carpeta
+cd: acceder a alguna carpeta
+cd..  nos permite ir atras en la carpeta
+git config --global user.name "nombre"
+git config --global user.email "correo"
+git init   inicia un git dentro de la carpeta donde nos encontramos
+git status   nos muestra que archivos dentro de la carpeta estan en git
