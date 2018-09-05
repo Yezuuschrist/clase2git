@@ -16,3 +16,12 @@ git reset HEAD nombre del archivo   me saca al archivo seleccionadao del staging
 git commit -a   (sin la -m, me enviara a un editor de texto de linux donde tenemos que escribir el mensaje que se mostrara acerca del 
 	cambio que se le hizo a ese commit, una vez terminado de comentar hay que darle a Esc y luego escribir :wq Enter para guardar 
 	ese mensaje a ese commit
+git checkout e137  <- nos lleva el HEAD hasta ese commit (e137<- esto es los primeros caracteres que identifican al commit)
+git checkout master  <- nos lleva al commit mas reciente
+git log -n 2  <- me muestra las ultimas dos commit realizadas
+gitk  <- me lleva a una venta de git que me ayuda a visualizar los cambios
+git checkout -- index.html  <- Me vuelve al archivo index.html a su estado tal como estaba en el ultimo commit
+git reset HEAD archivo  <- Me saca al archivo del staging area y en caso de que me haya equivocado y quiero ir al ultimo commit, 
+	debo sacar al archivo del staging (si lo esta) y luego aplicar el comando anterior para poder reponer al archivo a su 
+	estado en el commit mas reciente
+
